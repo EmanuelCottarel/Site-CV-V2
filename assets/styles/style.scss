@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Space+Mono&display=swap');
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+
+@keyframes translate {
+    from {
+        transform: translateY(0);
+
+    } 50%{
+        transform: translateY(10px);
+    } to{
+        transform: translateY(0);
+    }
+}
+
+*{
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    
+
+    
+}
+
+body{
+   
+    background: rgb(49,66,125);
+    background: linear-gradient(145deg, rgb(72, 41, 107) 5%, rgba(43, 58, 110,1) 100%);     
+    margin: 0;   
+    height: auto;
+    font-family: 'Inconsolata', monospace;
+    scroll-behavior:smooth;
+}
+
+
+h1,h2{
+    font-family: 'Inconsolata', monospace;
+}
+
+h2{
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 3px 3px 1px #909090;
+}
+
+nav{
+    width: 60px;
+    height: 1000px;    
+    border-right: 1px solid #fff;
+    background-color: #303030;
+    position: fixed;
+    display: flex;
+
+    
+    
+   
+
+    
+    
+    ul{
+        margin-top: 50px;
+        list-style: none;
+        padding-left: 12px;
+     
+        img{
+        width: 35px;
+        margin-bottom: 15px;
+        
+        }
+
+        img:hover{
+            filter: blur(0.5px);
+            transform: scale(1.1);
+            
+        }
+    
+    }
+}
+
+
+header{
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    color:#fff;
+    height: 800px;
+  
+    
+    flex-direction: column;
+    justify-content: center;
+
+        
+    h1,h2{
+        font-size:3.5rem;
+        padding-left: 150px;
+        line-height: 1;
+    }
+
+    .animate-text { 
+	visibility:hidden;
+    font-family:"courier",sans-serif;
+  
+    
+    }
+    
+    
+   
+
+  
+
+    .polygons{
+
+        img{
+            width: 150px;
+        }
+        
+        #pol1{
+            position: absolute;
+            left:80%;
+            
+            animation: rotation 30s infinite linear;
+          
+        }
+
+        #pol2{
+            position: absolute;
+            bottom: 80%;
+            left:20%;
+            
+            animation: rotation 40s infinite linear;
+          
+        }
+
+        #pol3{
+            position: absolute;
+            top:70%;
+            left:10%;
+            
+            animation: rotation 40s infinite linear;
+          
+        }
+
+        #pol4{
+            position: absolute;
+            bottom: 70%;
+            left:50%;
+            
+            animation: rotation 40s infinite linear;
+          
+        }
+
+
+
+     
+
+    }
+
+}
+
+.arrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+
+    a {
+        width:20rem;
+        height: 7rem;
+    }
+   
+    img{
+        width: 20rem;
+        height: 7rem;
+        
+        animation: translate 2s infinite linear;
+
+       
+    }
+    
+    
+}
+
+
+.skills{
+    height: 800px;
+    text-align: center;
+}
+
+.portfolio{
+    height: 800px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    
+    
+    &__cards{
+        display: flex;       
+        justify-content: space-around;
+        flex-wrap: wrap;
+        cursor: pointer;
+        
+    }
+    
+
+
+    &__cards--card{
+        height: 350px;
+        width: 450px;
+        background-color: #303030;
+        box-shadow: 5px 5px 1px rgb(29, 29, 29);
+        border-left: 1px solid;
+        border-top: 1px solid;
+        border-image: linear-gradient(180deg, #909090, #303030) 1;
+        margin-bottom: 25px;
+
+    
+
+
+        }
+
+        &__cards--card:hover{
+            box-shadow: 2px 2px 2px rgb(29, 29, 29);
+            border-left: 2px solid;
+            border-top: 2px solid;
+            border-image: linear-gradient(180deg, #985adf, #303030) 1;
+
+        
+    }
+
+    &__cards--card--img{
+        height: 70%;
+        padding: 0.5rem;
+       
+        
+    }
+
+    &__cards--card--text{
+        height: 30%;
+        background-color: #90909080;
+        color: #fff;
+        text-align: left;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+
+        
+        
+    }
+
+
+
+
+}
+
