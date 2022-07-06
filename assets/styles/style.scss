@@ -10,7 +10,16 @@
     }
 }
 
+@keyframes scale {
+    from {
+        transform: scale(1);
 
+    } 50%{
+        transform:scale(1.1);
+    } to{
+        transform: scale(1);
+    }
+}
 
 
 @keyframes translate {
@@ -352,6 +361,18 @@ header{
   font-size: 100%;
   height: 1000px;
  
+
+  button{
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color:#fff;
+    height: 40px;
+    animation: scale 4s infinite linear;
+    cursor: pointer;
+
+}
   
  
 }
@@ -398,6 +419,7 @@ header{
     border-style: solid;
     border-radius: 0.5em;
     position: relative;
+    line-height: 1.2;
     &:before, &:after {
       content: "";
       width: 0;
@@ -435,6 +457,7 @@ header{
     top: 20px;
     left:-275px;
     transition: transform 0.2s linear;
+    cursor: pointer;
   }
   .radio {
     display: none;
@@ -442,11 +465,11 @@ header{
   .radio:checked {
     & + .relative {
       label {
-        cursor: auto;
+        
         transform: translateX(42px);
       }
       .circle {
-         background: #985adf; 
+         background: #ff0000; 
       }
     }
     & ~ .content {
@@ -461,4 +484,38 @@ header{
         transition: color 0.3s linear 0.3s;
       }
     }
+  }
+
+
+
+  .contact{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    h2{
+        width: 100%;
+    }
+
+    .contactInfo{
+        margin-top:5rem;
+        width: 300px;
+        color: #fff;
+        text-align: center;
+        align-content: center;
+        
+    }
+
+    img{
+        width: 200px;
+    }
+
+    p{
+        font-size: 1.5rem;
+        width: 300px;
+        
+       
+    }
+
   }

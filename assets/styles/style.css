@@ -15,6 +15,28 @@
     transform: rotate(359deg);
   }
 }
+@-webkit-keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 @-webkit-keyframes translate {
   from {
     transform: translateY(0);
@@ -258,6 +280,17 @@ header .polygons #pol4 {
   font-size: 100%;
   height: 1000px;
 }
+.parcours button {
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: #fff;
+  height: 40px;
+  -webkit-animation: scale 4s infinite linear;
+          animation: scale 4s infinite linear;
+  cursor: pointer;
+}
 
 #timeline {
   list-style: none;
@@ -303,6 +336,7 @@ header .polygons #pol4 {
   border-style: solid;
   border-radius: 0.5em;
   position: relative;
+  line-height: 1.2;
 }
 .content:before, .content:after {
   content: "";
@@ -342,6 +376,7 @@ label {
   top: 20px;
   left: -275px;
   transition: transform 0.2s linear;
+  cursor: pointer;
 }
 
 .radio {
@@ -349,11 +384,10 @@ label {
 }
 
 .radio:checked + .relative label {
-  cursor: auto;
   transform: translateX(42px);
 }
 .radio:checked + .relative .circle {
-  background: #985adf;
+  background: #ff0000;
 }
 .radio:checked ~ .content {
   max-height: 180px;
@@ -366,4 +400,28 @@ label {
   max-height: 200px;
   color: #fff;
   transition: color 0.3s linear 0.3s;
+}
+
+.contact {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contact h2 {
+  width: 100%;
+}
+.contact .contactInfo {
+  margin-top: 5rem;
+  width: 300px;
+  color: #fff;
+  text-align: center;
+  align-content: center;
+}
+.contact img {
+  width: 200px;
+}
+.contact p {
+  font-size: 1.5rem;
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */
