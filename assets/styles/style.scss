@@ -36,7 +36,7 @@
 body{
    
     background: rgb(49,66,125);
-    background: linear-gradient(145deg, rgb(72, 41, 107) 5%, rgba(43, 58, 110,1) 100%);     
+    background: linear-gradient(145deg, rgb(72, 41, 107) 5%, rgb(43, 58, 110) 100%);     
     margin: 0;   
     height: auto;
     font-family: 'Inconsolata', monospace;
@@ -44,14 +44,18 @@ body{
 }
 
 
-h1,h2{
-    font-family: 'Inconsolata', monospace;
-}
+
 
 h2{
     font-size: 5rem;
     color: #fff;
     text-shadow: 3px 3px 1px #909090;
+}
+
+h3{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 1px #909090;
 }
 
 nav{
@@ -207,7 +211,7 @@ header{
         display: flex;       
         justify-content: space-around;
         flex-wrap: wrap;
-        cursor: pointer;
+        
         
     }
     
@@ -222,6 +226,8 @@ header{
         border-top: 1px solid;
         border-image: linear-gradient(180deg, #909090, #303030) 1;
         margin-bottom: 25px;
+        cursor: pointer;
+        display: block;
 
     
 
@@ -260,5 +266,199 @@ header{
 
 
 
+   
+
 }
 
+
+    
+
+    
+    
+.portfolio__overlay{
+    width: 600px;
+    height: 1000px;    
+    border-left: 1px solid #fff;
+    background-color: #303030;
+    z-index: 10;
+    position: fixed;
+    right: 0;    
+    text-align: right;
+    
+    visibility: hidden; 
+
+    h3{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    img{
+        padding: 10px;
+        
+    }
+     
+    h4{
+        
+        color: #fff;
+        border: 1px solid white;
+        border-radius: 5px;
+        display: inline-block;
+        width: auto;
+        padding: 4px;
+        margin: 5px;
+        background-color: #2b3a6e80;
+    }
+
+    p{
+        color: #fff;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .close{
+        text-align: right;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        cursor: pointer;
+        
+        
+
+
+        img{
+            width: 40px;
+            
+        }
+
+        img:hover{
+            filter: blur(2);
+            transform: scale(1.1);
+        }
+        
+        
+    }
+
+    
+    
+}
+
+
+.parcours{
+    text-align: center;
+    color:#fff;
+    max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  font-size: 100%;
+  height: 1000px;
+ 
+  
+ 
+}
+
+
+#timeline {
+    list-style: none;
+    margin: 50px 0 30px 120px;
+    padding-left: 30px;
+    border-left: 8px solid #fff;
+    li {
+      margin: 40px 0;
+      position: relative;
+    }
+    p {
+      margin: 0 0 15px;
+    }
+  }
+  .date {
+    margin-top: -10px;
+    top: 50%;
+    left: -600px;
+    font-size: 2em;
+    line-height: 20px;
+    position: absolute;
+  }
+  .circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -44px;
+    width: 20px ;  
+    height: 20px;
+    background: #985adf;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+  }
+  .content {
+    max-height: 20px;
+    padding: 50px 20px 0;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.5em;
+    position: relative;
+    &:before, &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border: solid transparent;
+      position: absolute;
+      pointer-events: none;
+      right: 100%;
+    }
+    &:before {
+      border-right-color: inherit;
+      border-width: 20px;
+      top: 50%;
+      margin-top: -20px;
+    }
+    &:after {
+     
+      border-width: 17px;
+      top: 50%;
+      margin-top: -17px;
+    }
+    p {
+      max-height: 0;
+      color: transparent;
+      text-align: justify;
+      word-break: break-word;
+      hyphens: auto;
+      overflow: hidden;
+    }
+  }
+  label{
+    font-size: 1.3em;
+    position: absolute;
+    z-index: 9;
+    top: 20px;
+    left:-275px;
+    transition: transform 0.2s linear;
+  }
+  .radio {
+    display: none;
+  }
+  .radio:checked {
+    & + .relative {
+      label {
+        cursor: auto;
+        transform: translateX(42px);
+      }
+      .circle {
+         background: #985adf; 
+      }
+    }
+    & ~ .content {
+      max-height: 180px;
+      border-color: #fff;
+      margin-right: 20px;
+      transform: translateX(20px);
+      transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+      p {
+        max-height: 200px;
+        color: #fff;
+        transition: color 0.3s linear 0.3s;
+      }
+    }
+  }

@@ -1,5 +1,6 @@
 
 
+
 // Animation text header "machine à écrire"
 
 window.addEventListener("DOMContentLoaded", (event) => {
@@ -32,3 +33,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
       delay_start += delay * letters.length;
     });
   }
+
+
+  
+
+ 
+  
+  

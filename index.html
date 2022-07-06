@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emanuel Cottarel</title>
     <link href="./assets/styles/style.css" rel="stylesheet">
-    <script type="text/javascript" src="./assets/JS/main.js"></script>
+    <script type="text/javascript" src="./assets/JS/overlay.js" defer></script>
+    <script type="text/javascript" src="./assets/JS/main.js" defer></script>
+    
 </head>
 
 <body>
@@ -16,12 +18,23 @@
             <li><a href="#"><img src="./assets/images/Home Page.png"></a></li>
             <li><a href="#"><img src="./assets/images/Settings.png"></a></li>
              <li><a href="#"><img src="./assets/images/Portfolio.png"></a></li>
-            <li><a href="#"><img src="./assets/images/Resume.png"></a></li>         
+            <li><a href="#"><img src="./assets/images/Resume.png"></a></li>       
             
             <li><a href="#"><img src="./assets/images/Phone.png"></a></li>
             <li><a href="#"><img src="./assets/images/Right Button.png"></a></li>
         </ul>
     </nav>
+
+    <div class ="portfolio__overlay" id="overlay1">
+        <span class="close"> <img src="./assets/images/Close.png"></span>
+        <h3>TeaCozy</h3>
+        <img src="./assets/images/TeaCozy.JPG">
+        <h4>HTML</h4><h4>CSS</h4>
+        <p>Site internet vitrine pour une boutique de thé fictive.</p>
+        
+        
+
+    </div>
     
     <header>
 
@@ -52,15 +65,21 @@
 
         </section>
 
+
+      
+
         <section class="portfolio">
+
+           
 
             <h2>Portfolio</h2>
 
             <section class="portfolio__cards">
 
-                <article class="portfolio__cards--card"> 
+                <article class="portfolio__cards--card" id="overlayTeaCozy"> 
                     <div class="portfolio__cards--card--img"><img src="./assets/images/TeaCozy.JPG" > </div>
-                    <div class= "portfolio__cards--card--text"><span>TeaCozy <br/>Developpement Web</span></div>            
+                    <div class= "portfolio__cards--card--text"><span>TeaCozy <br/>Developpement Web</span></div>
+                        
                 </article>
 
                 <article class="portfolio__cards--card"> 
@@ -73,9 +92,56 @@
                     <div class= "portfolio__cards--card--text"><span>TeaCozy <br/>Developpement Web</span></div>                  
                 </article>
 
+               
+
             </section>
         </section>
 
+
+        <section class="parcours" id="parcours">
+            <h2>Mon parcours</h2>
+
+
+            <ul id="timeline">
+                <li class="work">
+                    <input class ='radio' id="work5" name="'works" type="radio" checked>
+                    <div class="relative">
+                        <label for="work5">Full-Stack Software Engineer - Codecademy</label>
+                        <span class="date">2022</span>
+                        <span class="circle"></span>
+                    </div>
+                    <div class="content">
+                        <p>Développement HTML/CSS/JS<br />
+                            Framework frontend: ReactJS, Bootstrap<br />
+                            Framework backend: Express.js<br />
+                            Databases: PostgreSQL<br />
+                            API: Swagger / OpenAPI</p>
+                    </div>
+                </li>
+
+                <li class="work">
+                    <input class ='radio' id="work3" name="'works" type="radio">
+                    <div class="relative">
+                        <label for="work3">Full-Stack Software Engineer - Codecademy</label>
+                        <span class="date">2022</span>
+                        <span class="circle"></span>
+                    </div>
+                    <div class="content">
+                        <p>Développement HTML/CSS/JS<br />
+                            Framework frontend: ReactJS, Bootstrap<br />
+                            Framework backend: Express.js<br />
+                            Databases: PostgreSQL<br />
+                            API: Swagger / OpenAPI</p>
+                    </div>
+                </li>
+
+
+
+            </ul>
+
+            
+
+        </section>
 
 
     </main>
