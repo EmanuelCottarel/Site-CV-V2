@@ -15,25 +15,41 @@
 
     <nav>
         <ul>
-            <li><a href="#"><img src="./assets/images/Home Page.png"></a></li>
-            <li><a href="#skills"><img src="./assets/images/Settings.png"></a></li>
-             <li><a href="#portfolio"><img src="./assets/images/Portfolio.png"></a></li>
-            <li><a href="#parcours"><img src="./assets/images/Resume.png"></a></li>       
+            <li><a href="#" title="Accueil"><img src="./assets/images/Home Page.png" ></a></li>
+            <li><a href="#skills" title="Compétences"><img src="./assets/images/Settings.png"></a></li>
+             <li><a href="#portfolio" title="Portfolio"><img src="./assets/images/Portfolio.png"></a></li>
+            <li><a href="#parcours" title="Parcours"><img src="./assets/images/Resume.png"></a></li>       
             
-            <li><a href="#contact"><img src="./assets/images/Phone.png"></a></li>
-            <li><a href="#"><img src="./assets/images/Right Button.png"></a></li>
+            <li><a href="#contact" title="Contact"><img src="./assets/images/Phone.png"></a></li>
+            <!-- <li><a href="#"><img src="./assets/images/Right Button.png"></a></li> -->
         </ul>
     </nav>
 
-    <div class ="portfolio__overlay" id="overlay1">
-        <span class="close"> <img src="./assets/images/Close.png"></span>
+    <div class ="portfolio__overlay" id="overlayTeaCozy">
+        <span class="close" id="closeTeaCozy"> <img src="./assets/images/Close.png"></span>
         <h3>TeaCozy</h3>
         <img src="./assets/images/TeaCozy.JPG">
         <h4>HTML</h4><h4>CSS</h4>
-        <p>Site internet vitrine pour une boutique de thé fictive.</p>
+        <p>Site internet vitrine pour une boutique de thé fictive.</p>       
         
-        
+    </div>
 
+    <div class ="portfolio__overlay" id="overlayAdhoc">
+        <span class="close" id="closeAdhoc"> <img src="./assets/images/Close.png"></span>
+        <h3>Adhoc</h3>
+        <img src="./assets/images/Adhoc.JPG">
+        <h4>HTML</h4><h4>CSS</h4><h4>Bootstrap</h4>
+        <p>Création d'un site internet en utilisant le Framework Bootstrap. Le site présente l'entreprise et son équipe.</p>       
+        
+    </div>
+
+    <div class ="portfolio__overlay" id="overlayCv">
+        <span class="close" id="closeCv"> <img src="./assets/images/Close.png"></span>
+        <h3>Site CV</h3>
+        <img src="./assets/images/siteCv.JPG">
+        <h4>HTML</h4><h4>CSS</h4>
+        <p>Site internet vitrine pour une boutique de thé fictive.</p>       
+        
     </div>
     
     <header>
@@ -41,27 +57,111 @@
         <div class ="polygons">
             <img src="./assets/images/Polygon 1.png" id="pol1" >
             <img src="./assets/images/Polygon 2.png" id="pol2" >
-            <img src="./assets/images/Ellipse 1.png" id="pol3" >
+            <img src="./assets/images/Polygon 3.png" id="pol3" >
             <img src="./assets/images/Ellipse 2.png" id="pol4" >
         </div>
        
-       
-        <h1 class="animate-text">> Emanuel Cottarel</h1>
+       <div class = "header__text">
+        <h2 class="animate-text">> Emanuel Cottarel</h2>
         <h1 class="animate-text">> Front-end developper</h1>
-        
+        <!--<input type="text" id="name" name="name" value=">">-->
+    </div>
        
 
 
     </header>
 
     <div class="arrow">
-         <a href="#skills"><img src="./assets/images/fleche_down.png" ></a>
+         <a href="#aboutme"><img src="./assets/images/fleche_down.png" ></a>
 
     </div>
 
     <main>
+
+        <section class="aboutme" id="aboutme">
+            <h2>A propos de moi</h2>
+
+            <ul>
+                <li>Age: 23 ans</li>
+                <li>Villes: Avignon / Montpellier</li>
+                <li>Permis B, véhiculé</li>
+            </ul>
+            <p>Developpeur Web, je suis à la recherche d'une alternance pour la rentrée de Septembre 2022.<br /><br />
+
+                
+                Après plusieurs mois d'auto-formation, réaliser une alternance dans le developpement Web me permettrait de faire un premier pas dans le monde professionnel du developpement Web et mobile.</p>
+
+        </section>
+
+
+
         <section class="skills" id="skills">
             <h2>Compétences</h2>
+
+            <h3>Informatiques</h3>
+
+
+
+           
+            <div class="skills-wrapper">
+                <div class ="skill">
+                <div class="contentSkill">
+                    <span>70%</span><span>HTML</span>
+                </div>
+                </div>
+                <div class ="skill">
+                <div class="contentSkill">
+                    <span>70%</span><span>CSS</span>
+                </div>
+                </div>
+                <div class ="skill">
+                    <div class="contentSkill">
+                    <span>30%</span><span>JS</span>
+                    </div>
+                </div>
+          </div>
+          <ul>
+            <li>Frameworks frontend: ReactJS, Bootstrap</li>
+            <li>Frameworks backend: Express.js</li>
+            <li>Databases: PostgreSQL</li>
+            <li>Versioning: Git</li>
+            <li>Design: Photoshop, Illustrator, Figma</li>
+
+          
+
+          </ul>
+
+          <h3>Langues</h3>
+
+          <div class="langue">
+                <div class="progressBar">
+                    <div class="progressBar__title">Français</div>
+                    <div class="progressBar__background">
+                         <div class="progressBar__bar" id="français">                    
+                        </div>                    
+                    </div>                  
+                </div>
+
+                <div class="progressBar">
+                    <div class="progressBar__title">Anglais - Niveau C1</div>
+                    <div class="progressBar__background">
+                        <div class="progressBar__bar" id="anglais">                    
+                        </div>                    
+                    </div>                  
+                </div>
+
+               
+
+                <div class="progressBar">
+                    <div class="progressBar__title">Italien - Niveau B2</div>
+                    <div class="progressBar__background">
+                        <div class="progressBar__bar" id="italien">                    
+                        </div>                    
+                    </div>                  
+                </div>
+          </div>
+          
+
 
         </section>
 
@@ -76,18 +176,18 @@
 
             <section class="portfolio__cards">
 
-                <article class="portfolio__cards--card" id="overlayTeaCozy"> 
-                    <div class="portfolio__cards--card--img"><img src="./assets/images/TeaCozy.JPG" > </div>
-                    <div class= "portfolio__cards--card--text"><span>TeaCozy <br/>Developpement Web</span></div>
+                <article class="portfolio__cards--card" id="cardCv" > 
+                    <div class="portfolio__cards--card--img"><img src="./assets/images/siteCv.JPG" > </div>
+                    <div class= "portfolio__cards--card--text"><span>Site CV <br/>Developpement Web</span></div>
                         
                 </article>
 
-                <article class="portfolio__cards--card"> 
+                <article class="portfolio__cards--card" id="cardAdhoc"> 
                     <div class="portfolio__cards--card--img"><img src="./assets/images/Adhoc.JPG" > </div>
                     <div class= "portfolio__cards--card--text"><span>Adhoc <br/>Developpement Web</span></div>                  
                 </article>
 
-                <article class="portfolio__cards--card"> 
+                <article class="portfolio__cards--card" id="cardTeaCozy"> 
                     <div class="portfolio__cards--card--img"><img src="./assets/images/TeaCozy.JPG" > </div>
                     <div class= "portfolio__cards--card--text"><span>TeaCozy <br/>Developpement Web</span></div>                  
                 </article>
@@ -103,8 +203,26 @@
 
 
             <ul id="timeline">
+
                 <li class="work">
-                    <input class ='radio' id="work5" name="'works" type="radio" checked>
+                    <input class ='radio' id="work6" name="'works" type="radio" checked>
+                    <div class="relative">
+                        <label for="work6">Développeur Web et mobile - DIGINAMIC - TITRE RNCP 5 - BAC+2
+                            </label>
+                        <span class="date">2022</span>
+                        <span class="circle"></span>
+                    </div>
+                    <div class="content">
+                        <p>Concevoir et développer un site internet dynamique <br />
+                            Développement HTML/CSS/JS <br />
+                            Concevoir et développer un site web avec un CMS: WordPress <br />
+                            Framework: ReactJS, SYMFONY, Bootstrap<br />
+                            Environnement : Javascript, PHP, HTML, CSS</p>
+                    </div>
+                </li>
+
+                <li class="work">
+                    <input class ='radio' id="work5" name="'works" type="radio">
                     <div class="relative">
                         <label for="work5">Full-Stack Software Engineer - Codecademy</label>
                         <span class="date">2022</span>
@@ -118,6 +236,8 @@
                             API: Swagger / OpenAPI</p>
                     </div>
                 </li>
+
+                
 
                 <li class="work">
                     <input class ='radio' id="work4" name="'works" type="radio">
@@ -134,7 +254,19 @@
                 <li class="work">
                     <input class ='radio' id="work3" name="'works" type="radio">
                     <div class="relative">
-                        <label for="work3">Licence 1 Langues Etrangères appliquées </label>
+                        <label for="work3">Cinéma Capitole Studios - Agent d'accueil </label>
+                        <span class="date">2018</span>
+                        <span class="circle"></span>
+                    </div>
+                    <div class="content">
+                        <p>Accueil clientèle, vente billetterie et confiserie, manutention, réception et contrôle des livraisons, formation des nouveaux agents, affichage, nettoyage des salles</p>
+                    </div>
+                </li>
+
+                <li class="work">
+                    <input class ='radio' id="work2" name="'works" type="radio">
+                    <div class="relative">
+                        <label for="work2">Licence 1 Langues Etrangères appliquées </label>
                         <span class="date">2017</span>
                         <span class="circle"></span>
                     </div>
@@ -147,7 +279,7 @@
 
             </ul>
 
-            <button>Telecharger mon CV</button>
+            <button><a href="./assets/fichiers/CV_emanuel_cottarel.pdf">Telecharger mon CV</a></button>
             
 
         </section>
@@ -169,6 +301,10 @@
         </section>
 
     </main>
+
+    <footer>
+        <h4>© Emanuel Cottarel</h4>
+    </footer>
 
 </body>
 </html>
