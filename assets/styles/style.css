@@ -1,65 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Space+Mono&display=swap");
-@-webkit-keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes scale {
-  from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes scale {
-  from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes translate {
-  from {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-@keyframes translate {
-  from {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
+@import url(./media.css);
+@import url(./keyframes.css);
 * {
   font-size: 16px;
   box-sizing: border-box;
@@ -76,7 +18,9 @@ body {
   scroll-behavior: smooth;
   width: 100%;
 }
-body h1, body h2, body h3 {
+body h1,
+body h2,
+body h3 {
   text-align: center;
 }
 body h2 {
@@ -138,7 +82,8 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-header h1, header h2 {
+header h1,
+header h2 {
   font-size: 3.5rem;
   padding-left: 10rem;
   line-height: 1;
@@ -589,7 +534,7 @@ label {
      border-image: linear-gradient(180deg, #985adf, #303030) 1;
 }
 .contact img {
-  width: 200px;
+  width: 150px;
   padding: 1rem;
 }
 .contact p {
@@ -604,63 +549,4 @@ footer {
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
-}
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 12px;
-  }
-  * {
-    width: 100%;
-  }
-  body {
-    margin: 0;
-    width: 100%;
-  }
-  body h2 {
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 1px #909090;
-  }
-  header {
-    height: 700px;
-  }
-  .polygons {
-    display: none;
-  }
-  .header__text {
-    padding-left: 4rem;
-  }
-  .header__text h1, .header__text h2 {
-    width: 100%;
-    padding: 0;
-    font-size: 2.8rem;
-    text-shadow: none;
-  }
-  nav {
-    display: none;
-  }
-  .aboutme {
-    width: 80%;
-  }
-  .skills {
-    width: 80%;
-  }
-  .skills-wrapper {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .langue {
-    width: 100%;
-  }
-  .progressBar__title {
-    font-size: 1rem;
-  }
-  .parcours {
-    display: none;
-  }
-  .portfolio__overlay {
-    display: none;
-  }
 }/*# sourceMappingURL=style.css.map */

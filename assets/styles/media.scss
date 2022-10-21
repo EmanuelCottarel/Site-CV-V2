@@ -1,0 +1,87 @@
+@media only screen and (max-width:480px){
+    html{
+        font-size: 12px;
+    }
+
+    *{
+      width: 100%;
+    }
+
+body{
+  margin: 0;
+  width: 100%;
+  
+  h2{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 1px #909090;
+  }
+}
+
+header{
+  height: 700px;
+}
+
+
+.polygons{
+  display: none;
+}
+
+
+  .header__text{
+    padding-left: 4rem;
+  
+  h1,h2{
+    width: 100%;
+    padding: 0;
+    font-size: 2.8rem;
+    text-shadow: none;
+  }
+}
+  
+ 
+
+
+nav{
+  display: none;
+  
+  
+}
+
+
+.aboutme{
+  width: 80%;
+}
+
+.skills{
+  width: 80%;
+  
+}
+
+
+.skills-wrapper{
+  flex-direction: column; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.langue{
+  width: 100%;
+ 
+}
+
+.progressBar__title{
+  font-size: 1rem;
+}
+
+
+.parcours{
+  display: none;
+}
+
+.portfolio__overlay{
+  display: none;
+}
+
+}
