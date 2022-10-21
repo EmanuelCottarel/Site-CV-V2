@@ -1,10 +1,6 @@
 @import url(./style.css);
 
 
-body{
-    
-     
-}
 
 header{
 
@@ -93,15 +89,36 @@ main{
         height: 30%;
         background-color: #90909080;
         text-align: left;
-        padding: 1rem;
+        padding: 0.5rem 0.5rem;
         font-size: 2rem;
         font-weight: 700;
 
-        
+
+        &--tags{
+            margin-top: 0.2em;
+
+            .tag{
+                background-color: #985adf95;
+                padding: 3px 5px;
+                border-radius: 5px;
+            }
+        }
+                
+        &--links{
+            text-align: end;
+               
+            
+            img{
+                width: 30px;               
+                
+            }
+            img:hover{
+                scale:1.1;
+                
+            }
+        }
         
     }
-
-
 
  
    

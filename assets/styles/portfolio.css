@@ -66,7 +66,24 @@ main {
   height: 30%;
   background-color: rgba(144, 144, 144, 0.5019607843);
   text-align: left;
-  padding: 1rem;
+  padding: 0.5rem 0.5rem;
   font-size: 2rem;
   font-weight: 700;
+}
+.portfolio__cards--card--text--tags {
+  margin-top: 0.2em;
+}
+.portfolio__cards--card--text--tags .tag {
+  background-color: rgba(152, 90, 223, 0.5843137255);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.portfolio__cards--card--text--links {
+  text-align: end;
+}
+.portfolio__cards--card--text--links img {
+  width: 30px;
+}
+.portfolio__cards--card--text--links img:hover {
+  scale: 1.1;
 }/*# sourceMappingURL=portfolio.css.map */
