@@ -1,0 +1,76 @@
+@import url(./style.css);
+body {
+  height: 1500px;
+}
+
+header {
+  height: auto;
+  margin-bottom: 75px;
+}
+header h1 {
+  font-size: 6em;
+  text-align: center;
+  text-shadow: 3px 3px 1px #909090;
+  margin-bottom: 0;
+  padding: 0;
+}
+header h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+}
+
+.portfolio {
+  height: auto;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+.portfolio__cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.portfolio__cards--card {
+  height: 350px;
+  width: 450px;
+  background-color: #303030;
+  box-shadow: 5px 5px 1px rgb(29, 29, 29);
+  border-left: 1px solid;
+  border-top: 1px solid;
+  -o-border-image: linear-gradient(180deg, #909090, #303030) 1;
+     border-image: linear-gradient(180deg, #909090, #303030) 1;
+  margin-bottom: 25px;
+  cursor: pointer;
+  display: block;
+}
+.portfolio__cards--card:hover {
+  box-shadow: 2px 2px 2px rgb(29, 29, 29);
+  border-left: 2px solid;
+  border-top: 2px solid;
+  -o-border-image: linear-gradient(180deg, #985adf, #303030) 1;
+     border-image: linear-gradient(180deg, #985adf, #303030) 1;
+}
+.portfolio__cards--card--img {
+  height: 70%;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.portfolio__cards--card--img img {
+  height: 100%;
+  height: 100%;
+}
+.portfolio__cards--card--text {
+  height: 30%;
+  background-color: rgba(144, 144, 144, 0.5019607843);
+  text-align: left;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}/*# sourceMappingURL=portfolio.css.map */

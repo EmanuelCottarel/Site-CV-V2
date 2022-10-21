@@ -74,6 +74,7 @@ body {
   height: auto;
   color: #fff;
   scroll-behavior: smooth;
+  width: 100%;
 }
 body h1, body h2, body h3 {
   text-align: center;
@@ -87,27 +88,45 @@ body h3 {
   font-size: 3rem;
   text-shadow: 2px 2px 1px #909090;
 }
+body button {
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 40px;
+  -webkit-animation: scale 4s infinite linear;
+          animation: scale 4s infinite linear;
+  cursor: pointer;
+  background-color: #985adf;
+}
+body button a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
 
 nav {
-  width: 60px;
-  height: 1000px;
-  border-right: 1px solid #fff;
-  background-color: #303030;
+  width: 100%;
+  height: auto;
   position: fixed;
-  display: flex;
 }
 nav ul {
-  margin-top: 50px;
   list-style: none;
-  padding-left: 12px;
+  text-align: end;
 }
-nav ul img {
-  width: 35px;
-  margin-bottom: 15px;
+nav ul li {
+  display: inline;
+  margin-right: 15px;
 }
-nav ul img:hover {
-  filter: blur(0.5px);
-  transform: scale(1.1);
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+nav ul li a:hover {
+  color: #985adf;
+  border-bottom: 2px solid #985adf;
 }
 
 header {
@@ -115,6 +134,7 @@ header {
   font-family: "Inconsolata", monospace;
   height: 800px;
   font-weight: 800;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
 }
@@ -423,21 +443,6 @@ header .polygons #pol4 {
   margin: 0 auto;
   padding: 0 5%;
   height: auto;
-}
-.parcours button {
-  width: 200px;
-  border: 1px solid white;
-  border-radius: 5px;
-  height: 40px;
-  -webkit-animation: scale 4s infinite linear;
-          animation: scale 4s infinite linear;
-  cursor: pointer;
-  background-color: #985adf;
-}
-.parcours button a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #fff;
 }
 
 #timeline {

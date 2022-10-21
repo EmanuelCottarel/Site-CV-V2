@@ -54,6 +54,7 @@ body{
     height: auto;
     color:#fff;
     scroll-behavior:smooth;
+    width: 100%;
 
 
     h1,h2,h3{
@@ -70,38 +71,65 @@ body{
           font-size: 3rem;          
           text-shadow: 2px 2px 1px #909090;
       }
-}
-nav{
-    width: 60px;
-    height: 1000px;    
-    border-right: 1px solid #fff;
-    background-color: #303030;
-    position: fixed;
-    display: flex;
 
-    
-    
-   
 
-    
-    
-    ul{
-        margin-top: 50px;
-        list-style: none;
-        padding-left: 12px;
-     
-        img{
-        width: 35px;
-        margin-bottom: 15px;
-        
-        }
-
-        img:hover{
-            filter: blur(0.5px);
-            transform: scale(1.1);
+      button{
+        width: 200px;    
+        border: 1px solid white;
+        border-radius: 5px;   
+        height: 40px;
+        animation: scale 4s infinite linear;
+        cursor: pointer;
+        background-color: #985adf;
+      
+       
+      
+        a{
+             text-decoration: none;
+             font-weight: 600;
+             color: #fff;
             
+            
+           
         }
+      }
+
+}
+
+
+
+nav{
+    width: 100%;
+    height: auto;           
+    position: fixed;
+  
+    ul{
+        
+        list-style: none;
+        text-align: end;
+        
     
+        li{
+          display: inline;
+          margin-right: 15px;
+          
+
+          a{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.3em;
+            font-weight: 600;
+            padding-bottom: 7px;
+
+            
+            
+          }
+
+          a:hover{
+            color: #985adf;
+                        border-bottom: 2px solid #985adf;
+          }
+        }
     }
 }
 
@@ -111,7 +139,7 @@ header{
     font-family: 'Inconsolata', monospace;
     height: 800px;
     font-weight: 800;
-  
+    width: 100%;
     
     flex-direction: column;
     justify-content: center;
@@ -486,7 +514,7 @@ header{
 
 
 
-
+ 
    
 
 }
@@ -571,26 +599,7 @@ header{
     height: auto;
  
 
-  button{
-    width: 200px;    
-    border: 1px solid white;
-    border-radius: 5px;   
-    height: 40px;
-    animation: scale 4s infinite linear;
-    cursor: pointer;
-    background-color: #985adf;
-
-   
-
-    a{
-         text-decoration: none;
-         font-weight: 600;
-         color: #fff;
-        
-        
-       
-    }
-}
+  
   
  
 }
